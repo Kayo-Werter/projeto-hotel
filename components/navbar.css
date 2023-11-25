@@ -1,0 +1,38 @@
+:root {
+    --transition: 0.4s ease-in;
+    --cor-texto-navbar: #fff;
+    --cor-gradiente-inicio: #63ABFF; /* Cor de início do gradiente */
+    --cor-gradiente-fim: #120039; /* Cor de fim do gradiente */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+  }
+  
+  .navbar h1 {
+    background: linear-gradient(to right, var(--cor-gradiente-inicio), var(--cor-gradiente-fim));
+    padding-top: 1.5%;
+    color: transparent; /* Faz o texto transparente para mostrar o gradiente de fundo */
+    margin: 0;
+    -webkit-background-clip: text; /* Permite o uso do gradiente como clip para o texto no Safari */
+    background-clip: text; /* Permite o uso do gradiente como clip para o texto */
+    
+    /* Adiciona propriedades para centralizar verticalmente o texto */
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar {
+    background: linear-gradient(261deg, #000 28.52%, #005E92 152.72%);
+    width: auto;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
