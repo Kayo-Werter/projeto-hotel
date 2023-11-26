@@ -15,7 +15,7 @@ html {
 
   .retangulo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 1400px;
     height: 620px;
@@ -99,10 +99,21 @@ html {
   /* fim input*/
 
   .foto_login {
-    width: 230px;
+    width: 430px;
     height: 350px;
   }
 
   .iframe {
     z-index: 1;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
 }
