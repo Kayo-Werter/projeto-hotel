@@ -17,15 +17,12 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1400px;
-    height: 620px;
+    justify-content: center;
+    width: auto;
+    height: auto;
     background-color: #001C2C;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    
+    border-radius: 10px;
+    padding: 20px 40px;
   }
 
   .botao__login:hover {
@@ -50,12 +47,13 @@ html {
     font-family: var(--fonte-padrao);
     font-weight: 600;
     transition: background 1s;
+    margin-bottom: 10px;
   }
 
   /* Style Input */
 .inputGroup {
     font-family: 'Segoe UI', sans-serif;
-    margin: 1em 0 1em 0;
+    margin: 1em 0 1.1em 0;
     max-width: 45.5em;
     position: relative;
   }
@@ -98,6 +96,12 @@ html {
   }
   /* fim input*/
 
+
+.center_input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   .foto_login {
     width: 430px;
     height: 350px;
@@ -116,4 +120,16 @@ html {
 .links{
   display: flex;
   flex-direction: column;
+  
+}
+
+.geral {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imagens{
+  padding-right: 5em;
 }
