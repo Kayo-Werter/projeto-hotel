@@ -1,0 +1,51 @@
+:root {
+    --transition: 0.4s ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+  }
+
+.retangulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1063px;
+    height: 327px;
+    background-color: #b0b0b0;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-left: 20px;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .carrossel {
+    
+    width: 400px;
+
+    height: 300px;
+  }
+
+
+  .btn{
+    margin: 20px;
+    width: 180px;
+    height: 45px;
+  }
+
+  .informacao{
+    margin: 10px;
+  }
