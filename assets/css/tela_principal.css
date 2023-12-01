@@ -18,8 +18,8 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 1063px;
-    height: 327px;
+    width: 1000px;
+    height: 330px;
     background-color: #b0b0b0;
     border-radius: 10px;
     padding: 20px 40px;
@@ -35,7 +35,6 @@ html {
   .carrossel {
     
     width: 400px;
-
     height: 300px;
   }
 
@@ -48,4 +47,32 @@ html {
 
   .informacao{
     margin: 10px;
+  }
+
+  .ambientes h1{
+    color: aliceblue;
+  }
+
+  .ambientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .container-fluid{
+    background: linear-gradient(261deg, #000 1.52%, #005E92 52.72%);
+
+    
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  section {
+    column-count: 3;
+    column-gap: 5px;
   }
