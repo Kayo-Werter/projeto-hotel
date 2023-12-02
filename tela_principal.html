@@ -8,68 +8,202 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-
-  <div>
-    <iframe src="components/navbar.html" frameborder="0" width="100%" height="100%"></iframe>
-    <div>
-        <div class="retangulo clearfix">
-        
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <iframe src="components/navbar.html" frameborder="0" width="100%" height="100%"></iframe>
+<div class="retangulo">
+  <div class="carroyceu">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/images/foto1920_1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active carrossel">
-                <img src="assets/images/foto1920_1.png" class=" w-100" alt="...">
-              </div>
-              <div class="carousel-item carrossel">
-                <img src="assets/images/foto1920_2.png" class=" w-100" alt="...">
-              </div>
-              <div class="carousel-item carrossel">
-                <img src="assets/images/foto1920_3.png" class=" w-100" alt="...">
-              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/foto1920_2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Proximo</span>
-            </button>
           </div>
-
-          <div class="informacao">
-            <h2>Quarto Master</h2>
-              <p>quato suite, com dois banheiros um com banheira de hidormassagem. Serviço de quarto e cafe da manhã incluso </p>
-            <h2>R$ 750,00</h2>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="3">4</option>
-              <option value="3">5</option>
-            </select>
-          </div>
-          <div class="reservar">
-            <button type="button" class="btn btn-primary">Reservar</button>
+          <div class="carousel-item">
+            <img src="assets/images/foto1920_3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              
+            </div>
           </div>
         </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+      </div>
   </div>
 
-  <div class="container-fluid ambientes">
-    <h1>Nossos Ambientes</h1>
-  </div>
   
-  <section class="section">
-    <img src="assets/images/foto1920_1.png" alt="">
-    <img src="assets/images/foto1920_2.png" alt="">
-    <img src="assets/images/foto1920_3.png" alt="">
-  </section>
+  <div class="info__quarto">
+    <h3>Quarto Master</h3>
+    <p>quato suite, com um banheiro com banheira de hidormassagem e cafe da manhã incluso </p>
+    <h3>R$ 750,00</h3>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Selecione a quantidade de pessoas</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <div>
+    <button type="button" class="btn btn-primary botao_reservar">Reservar</button>
+  </div>
+</div>
+
+<div class="retangulo">
+  <div class="carroyceu">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/images/foto1920_1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/foto1920_2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/foto1920_3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+      </div>
+  </div>
+
+  
+  <div class="info__quarto">
+    <h3>Quarto Master</h3>
+    <p>quato suite, com um banheiro com banheira de hidormassagem e cafe da manhã incluso </p>
+    <h3>R$ 750,00</h3>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Selecione a quantidade de pessoas</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <div>
+    <button type="button" class="btn btn-primary botao_reservar">Reservar</button>
+  </div>
+</div>
+
+<div class="retangulo">
+  <div class="carroyceu">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/images/foto1920_1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/foto1920_2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/foto1920_3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+      </div>
+  </div>
+
+  
+  <div class="info__quarto">
+    <h3>Quarto Master</h3>
+    <p>quato suite, com um banheiro com banheira de hidormassagem e cafe da manhã incluso </p>
+    <h3>R$ 750,00</h3>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Selecione a quantidade de pessoas</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <div>
+    <button type="button" class="btn btn-primary botao_reservar">Reservar</button>
+  </div>
+</div>
+
+<div class="container-fluid ambientes">
+  <h1>Nossos Ambientes</h1>
+</div>
+  
+<section class="section">
+  <img class="imagens_sec" src="assets/images/foto1920_1.png" alt="">
+  <img class="imagens_sec" src="assets/images/foto1920_2.png" alt="">
+  <img class="imagens_sec" src="assets/images/foto1920_3.png" alt="">
+</section>
 
   <div class="container-fluid">
     <div>

@@ -2,9 +2,10 @@
     --transition: 0.4s ease-in;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+
+img{
+  border-radius: 10px;
+}
 
 * {
     margin: 0;
@@ -12,67 +13,44 @@ html {
     box-sizing: border-box;
     transition: var(--transition);
   }
+  
+  .carroyceu{
+    width: 500px;
+    padding: 0px 15px 0px 10px;
+}
 
 .retangulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 1000px;
-    height: 330px;
-    background-color: #b0b0b0;
-    border-radius: 10px;
-    padding: 20px 40px;
-    margin-left: 20px;
-  }
+  background: #cfcfcf;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0px 0px 10px 10px;
+}
 
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.info__quarto{
+  width: 250px;
+}
 
-  .carrossel {
-    
-    width: 400px;
-    height: 300px;
-  }
+.botao_reservar{
+  margin: 219px 10px 25px 10px;
+  
+}
 
-
-  .btn{
-    margin: 20px;
-    width: 180px;
-    height: 45px;
-  }
-
-  .informacao{
-    margin: 10px;
-  }
-
-  .ambientes h1{
-    color: aliceblue;
-  }
-
-  .ambientes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-  .container-fluid{
+.container-fluid{
     background: linear-gradient(261deg, #000 1.52%, #005E92 52.72%);
 
     
   }
 
-  img {
+.imagens_sec {
     width: 100%;
-    border-radius: 10px;
+
     margin-bottom: 10px;
   }
 
-  section {
+section {
     column-count: 3;
     column-gap: 5px;
   }

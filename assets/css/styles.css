@@ -6,6 +6,16 @@ html {
     scroll-behavior: smooth;
   }
 
+  body {
+    font-size: 16px; /* Defina um tamanho de fonte base para o corpo do documento */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajuste a fonte para telas menores */
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +58,9 @@ html {
     font-weight: 600;
     transition: background 1s;
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px; /* ou ajuste conforme necessário */
+    margin: 0 auto; /* centraliza o botão */
   }
 
   /* Style Input */
@@ -102,10 +115,10 @@ html {
   flex-direction: column;
   align-items: center;
 }
-  .foto_login {
-    width: 430px;
-    height: 350px;
-  }
+.foto_login {
+  max-width: 100%;
+  height: auto;
+}
 
   .iframe {
     z-index: 1;
