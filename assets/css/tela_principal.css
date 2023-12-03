@@ -13,8 +13,8 @@ img{
     box-sizing: border-box;
     transition: var(--transition);
   }
-  
-  .carroyceu{
+
+.carroyceu{
     width: 500px;
     padding: 0px 15px 0px 10px;
 }
@@ -42,7 +42,18 @@ img{
     background: linear-gradient(261deg, #000 1.52%, #005E92 52.72%);
 
     
-  }
+}
+.ambientes{
+  background: linear-gradient(261deg, #000 1.52%, #005E92 52.72%);
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.ambientes h1{
+  color: aliceblue;
+}
 
 .imagens_sec {
     width: 100%;
