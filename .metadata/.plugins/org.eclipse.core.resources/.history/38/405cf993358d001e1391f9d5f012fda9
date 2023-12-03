@@ -1,0 +1,9 @@
+<% 
+String nomeUsuario = (String)request.getAttribute("usuario");
+
+%>
+<html>
+	<body>
+		<h1>Nome <%= nomeUsuario %> cadastrado</h1>
+	</body>
+</html>

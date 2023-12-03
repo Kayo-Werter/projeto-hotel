@@ -1,0 +1,9 @@
+<% 
+String nomeUsuario = "china";
+
+%>
+<html>
+	<body>
+		Nome <%= nomeUsuario %> cadastrado
+	</body>
+</html>

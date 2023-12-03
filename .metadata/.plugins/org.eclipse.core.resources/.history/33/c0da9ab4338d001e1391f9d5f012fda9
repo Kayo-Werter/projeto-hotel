@@ -1,0 +1,9 @@
+<% 
+String nomeUsuario = "Kayo";
+
+%>
+<html>
+	<body>
+		Nome: <% out.println(nomeUsuario) %>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\kayow\OneDrive\Documentos\Github\teste\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2527649571.index
+1956258630.index
+3587523779.index
+268419307.index
+2378140781.index
+707929940.index

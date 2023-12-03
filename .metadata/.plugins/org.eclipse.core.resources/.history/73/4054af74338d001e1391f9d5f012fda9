@@ -1,0 +1,9 @@
+<% 
+String nome = "Kayo";
+
+%>
+<html>
+	<body>
+		
+	</body>
+</html>

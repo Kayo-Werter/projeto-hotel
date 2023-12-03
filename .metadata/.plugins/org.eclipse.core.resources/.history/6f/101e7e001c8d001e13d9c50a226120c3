@@ -1,0 +1,5 @@
+package br.com.projetohotel.hotel;
+
+public class Usuario {
+
+}
