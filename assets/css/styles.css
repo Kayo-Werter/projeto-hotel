@@ -137,3 +137,23 @@ html {
 .imagens{
   padding-right: 5em;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  color: #ffffff;
+  background: linear-gradient(261deg, #000 28.52%, #005E92 152.72%);
+}
+
+.footer-icons {
+  padding-top: 14px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+i {
+  color: #ffffff;
+}

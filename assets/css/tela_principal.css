@@ -1,22 +1,62 @@
 :root {
-    --transition: 0.4s ease-in;
+  --transition: 0.4s ease-in;
+  --cor-texto-navbar: #fff;
+  --cor-gradiente-inicio: #63ABFF;
+  --cor-gradiente-fim: #120039;
 }
 
 
-img{
+img {
   border-radius: 10px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: var(--transition);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
 
-.carroyceu{
-    width: 500px;
-    padding: 0px 15px 0px 10px;
+.texto {
+  background: linear-gradient(to right, var(--cor-gradiente-inicio), var(--cor-gradiente-fim));
+  padding-top: 1.5%;
+  margin: 0;
+  color: transparent;
+  /* Faz o texto transparente para mostrar o gradiente de fundo */
+  -webkit-background-clip: text;
+  /* Permite o uso do gradiente como clip para o texto no Safari */
+  background-clip: text;
+  /* Permite o uso do gradiente como clip para o texto */
+
+  /* Adiciona propriedades para centralizar verticalmente o texto */
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho {
+  background: linear-gradient(261deg, #000 28.52%, #005E92 152.72%);
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar {
+  background: rgba(255, 0, 0, 0);
+  /* O valor 0.5 no canal alfa indica 50% de opacidade, ajuste conforme necessário */
+}
+
+.navbar a {
+  color: #fff;
+}
+
+
+.carroyceu {
+  width: 500px;
+  padding: 0px 15px 0px 0px;
 }
 
 .retangulo {
@@ -26,24 +66,29 @@ img{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 18px 10px;
+  -webkit-box-shadow: 9px 6px 17px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 6px 17px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 6px 17px -7px rgba(0, 0, 0, 0.75);
 }
 
-.info__quarto{
+.info__quarto {
   width: 250px;
 }
 
-.botao_reservar{
-  margin: 219px 10px 25px 10px;
-  
+.info__quarto h3 {
+  margin-left: 35px;
 }
 
-.container-fluid{
-    background: linear-gradient(261deg, #000 1.52%, #005E92 52.72%);
 
-    
+.botao_reservar {
+  width: 130px;
+  margin-left: 35px;
 }
-.ambientes{
+
+
+
+.ambientes {
   background: linear-gradient(261deg, #000 1.52%, #005E92 52.72%);
   display: flex;
   justify-content: center;
@@ -51,17 +96,19 @@ img{
   border-radius: 10px;
 }
 
-.ambientes h1{
+.ambientes h1 {
   color: aliceblue;
 }
 
 .imagens_sec {
-    width: 100%;
+  width: 100%;
 
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
+}
 
 section {
-    column-count: 3;
-    column-gap: 5px;
-  }
+  column-count: 3;
+  column-gap: 5px;
+}
+
+
