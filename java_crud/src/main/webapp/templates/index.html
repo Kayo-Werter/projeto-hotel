@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1 class="texto">HOTELWEB</h1>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="fonte navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="fonte nav-link" aria-current="page" href="../lista.jsp">Hóspedes</a>
+            </li>
+            <li class="nav-item">
+              <a class="fonte nav-link" href="#">Nossos ambientes</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="retangulo">
+    <div class="carroyceu">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/images/quarto1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/quarto2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/quarto3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="info__quarto">
+      <h3>Quarto Master</h3>
+      <p>quato suite, com um banheiro com banheira de hidormassagem e cafe da manhã incluso </p>
+      <h3>R$ 750,00</h3>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Selecione a quantidade de pessoas</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <a href="../cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
+    </div>
+  </div>
+
+  <div class="retangulo">
+    <div class="carroyceu">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/images/quarto4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/quarto5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/quarto6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="info__quarto">
+      <h3>Quarto Casal</h3>
+      <p>quato suite, com um banheiro com banheira de hidormassagem e cafe da manhã incluso </p>
+      <h3>R$ 450,00</h3>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Selecione a quantidade de pessoas</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div>
+      <a href="../cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
+    </div>
+  </div>
+
+  <div class="retangulo">
+    <div class="carroyceu">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/images/quarto7.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/quarto8.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/quarto9.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="info__quarto">
+      <h3>Quarto Solteiro</h3>
+      <p>quato suite, com um banheiro com banheira de hidormassagem e cafe da manhã incluso </p>
+      <h3>R$ 250,00</h3>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Selecione a quantidade de pessoas</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <a href="../cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
+    </div>
+  </div>
+
+  <div class="ambientes">
+    <h2>Nossos Ambientes</h2>
+  </div>
+
+  <section class="section_ambientes">
+    <img class="imagens_locais" src="assets/images/academia.png" alt="">
+    <img class="imagens_locais" src="assets/images/piscina.png" alt="">
+    <img class="imagens_locais" src="assets/images/restaurante.png" alt="">
+  </section>
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/kayowerter/" target="_blank">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+      </a>
+    </div>
+    <p>Copyright 2023 | HotelWeb - Todos os Direitos Reservados</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
