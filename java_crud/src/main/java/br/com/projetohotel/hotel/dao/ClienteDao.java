@@ -23,8 +23,8 @@ public class ClienteDao implements CRUD {
 			 
 			 preparedStatement.setString(1, cliente.getNome());
 			 preparedStatement.setString(2, cliente.getCpf());
-			 preparedStatement.setString(3, cliente.getNascimento());
-			 preparedStatement.setString(4, cliente.getSituacao());
+			 preparedStatement.setString(3, cliente.getEntrada());
+			 preparedStatement.setInt(4, cliente.getDias());
 			 
 			 preparedStatement.executeUpdate();
 			 
@@ -67,8 +67,8 @@ public class ClienteDao implements CRUD {
 				cliente.setId(resultSet.getInt("id"));
 				cliente.setNome(resultSet.getString("nome"));
 				cliente.setCpf(resultSet.getString("cpf"));
-				cliente.setNascimento(resultSet.getString("nascimento"));
-				cliente.setSituacao(resultSet.getString("situacao"));
+				cliente.setEntrada(resultSet.getString("entrada"));
+				cliente.setDias(resultSet.getInt("dias"));
 				
 				clientes.add(cliente);
 			}
@@ -94,8 +94,8 @@ public class ClienteDao implements CRUD {
 				cliente.setId(resultSet.getInt("id"));
 				cliente.setNome(resultSet.getString("nome"));
 				cliente.setCpf(resultSet.getString("cpf"));
-				cliente.setNascimento(resultSet.getString("nascimento"));
-				cliente.setSituacao(resultSet.getString("situacao"));
+				cliente.setEntrada(resultSet.getString("entrada"));
+				cliente.setDias(resultSet.getInt("dias"));
 			}
 			
 			System.out.println("--correct find by pk clientes");
@@ -109,17 +109,17 @@ public class ClienteDao implements CRUD {
 	}
 	
 	public static void update(Cliente cliente) {
-		sql = "UPDATE clientes SET nome=?, cpf=?, nascimento=?, situacao=? WHERE id=?";
+		sql = "UPDATE clientes SET nome=?, cpf=?, entrada=?, dias=? WHERE id=?";
 		 
 		 try {
 			 PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			 
 			 preparedStatement.setString(1, cliente.getNome());
 			 preparedStatement.setString(2, cliente.getCpf());
-			 preparedStatement.setString(3, cliente.getNascimento());
-			 preparedStatement.setString(4, cliente.getSituacao());
+			 preparedStatement.setString(3, cliente.getEntrada());
+			 preparedStatement.setInt(4, cliente.getDias());
 			 preparedStatement.setInt(5, cliente.getId());
-			 
+
 			 preparedStatement.executeUpdate();
 			 
 			 System.out.println("--correct update on database");

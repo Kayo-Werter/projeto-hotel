@@ -1,8 +1,21 @@
 :root {
-    --transition: 0.4s ease-in;
-    --cor-texto-navbar: #fff;
-    --cor-gradiente-inicio: #63ABFF;
-    --cor-gradiente-fim: #120039;
+    --transition: 0.5s ease-in;
+    --cor1: rgb(18, 0, 56);
+    --cor2: rgb(50, 100, 170);
+    --cor3: rgb(99, 172, 255);
+    --corTexto: rgb(250, 250, 250);
+    --corBackground: rgb(240, 240, 240);
+    --ionicon-image: url(../images/sunny.svg);
+}
+
+.dark {
+    --transition: 0.5s ease-in;
+    --cor1: rgb(107, 36, 12);
+    --cor2: rgb(153, 77, 28);
+    --cor3: rgb(228, 143, 69);
+    --corBackground: rgb(224, 188, 156);
+    --corTexto: rgb(245, 204, 160);
+    --ionicon-image: url(../images/moon.svg);
 }
 
 img {
@@ -17,8 +30,8 @@ img {
 }
 
 .texto {
-    background: linear-gradient(to right, var(--cor-gradiente-inicio), var(--cor-gradiente-fim));
-    padding-top: 1.5%;
+    background: linear-gradient(to right, var(--cor2), var(--cor1));
+    padding-bottom: 1.5%;
     margin: 0;
     color: transparent;
     -webkit-background-clip: text;
@@ -28,7 +41,7 @@ img {
 }
 
 .cabecalho {
-    background: linear-gradient(261deg, #000 28.52%, #005E92 152.72%);
+    background: linear-gradient(260deg, var(--cor3), var(--cor2));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,11 +52,10 @@ img {
 
 .navbar {
     background: rgba(255, 0, 0, 0);
-    
 }
 
 .navbar a {
-    color: #fff;
+    color: var(--corTexto);
 }
 
 .carroyceu {
@@ -52,7 +64,7 @@ img {
 }
 
 .retangulo {
-    background: #cfcfcf;
+    background: var(--corBackground);
     width: 700px;
     display: flex;
     justify-content: center;
@@ -70,7 +82,7 @@ img {
 }
 
 .ambientes {
-    background: linear-gradient(261deg, #000 1.52%, #005E92 52.72%);
+    background: linear-gradient(260deg, var(--cor3), var(--cor2));
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -95,8 +107,8 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    color: #ffffff;
-    background: linear-gradient(261deg, #000 28.52%, #005E92 152.72%);
+    color: var(--corTexto);
+    background: linear-gradient(260deg, var(--cor3), var(--cor2));
     margin-top: 16px;
 }
 
@@ -108,5 +120,140 @@ img {
 }
 
 i {
-    color: #ffffff;
+    color: var(--corTexto);
+}
+
+.botoes {
+    border: 1px solid #fcfcfc;
+    padding: 8px 24px;
+    color: var(--corTexto);
+    background-color: transparent;
+    transition: background-color 0.8s;
+    text-decoration: none;
+}
+
+.botoes:hover {
+    border: 1px solid #d34040;
+    background-color: #d34040;
+    color: var(--corTexto);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    position: relative;
+    height: 24px;
+    width: 50px;
+    transform: scale(1.2);
+}
+
+.label .ball {
+    background-color: var(--corTexto);
+    border-radius: 50%;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    padding-top: 10px;
+}
+
+#switch {
+    position: relative;
+    width: 60px;
+
+    margin: 5px auto;
+    padding-top: 5px;
+}
+
+#switch button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+
+    background-color: var(--cor3);
+    background-size: 20px;
+    background-image: var(--ionicon-image);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid var(--cor3);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+
+    transition: ease-in .25s;
+    animation: switch-slide-light 0.33s forwards;
+}
+
+.dark #switch button {
+    background-image: var(--ionicon-image);
+
+    animation: switch-slide-dark 0.33s forwards;
+}
+
+#switch button:hover {
+    border: 2px inset var(--cor2);
+
+    transition: ease-out .25s;
+}
+
+#switch span {
+    display: block;
+    width: 65px;
+    height: 25px;
+
+    background-color: var(--cor2);
+
+    border: 2px solid var(--cor3);
+    border-radius: 999px;
+}
+
+@keyframes switch-slide-dark {
+    from {
+        left: 0;
+    } to {
+        left: 60%;
+    }
+}
+
+@keyframes switch-slide-light {
+    from {
+        left: 60%;
+    } to {
+        left: 0;
+    }
 }

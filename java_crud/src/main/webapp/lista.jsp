@@ -4,7 +4,7 @@
 <%@ page import="java.sql.*" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>CRUD Java - Lista de Clientes</title>
@@ -51,7 +51,6 @@
                 	    Connection connection = null;
                         Statement stmt = null;
                         ResultSet rs = null;
-                        int idCliente = 0;
 
                         // Carregar o driver JDBC
                         Class.forName("com.mysql.cj.jdbc.Driver");
@@ -72,14 +71,11 @@
                             out.println("<td>" + rs.getInt("id") + "</td>");
                             out.println("<td>" + rs.getString("nome") + "</td>");
                             out.println("<td>" + rs.getString("cpf") + "</td>");
-                            out.println("<td>" + rs.getString("nascimento") + "</td>");
-                            out.println("<td>" + rs.getString("situacao") + "</td>");
+                            out.println("<td>" + rs.getString("entrada") + "</td>");
+                            out.println("<td>" + rs.getString("dias") + "</td>");
                             out.println("<td>");
                             out.println("<a href=ClienteDestroy?clienteId=" + rs.getInt("id") + ">Deletar</a>");
                             out.println("</td>");
-                            out.println("<td>");
-                            out.println("</td>");
-
                             out.println("</tr>");
                         }
                         out.println("</table>");

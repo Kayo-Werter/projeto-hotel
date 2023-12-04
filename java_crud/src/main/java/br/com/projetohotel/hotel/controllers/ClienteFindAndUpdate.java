@@ -35,8 +35,8 @@ public class ClienteFindAndUpdate extends HttpServlet {
 		cliente.setId(Integer.parseInt(request.getParameter("id")));
 		cliente.setNome(request.getParameter("nome"));
 		cliente.setCpf(request.getParameter("cpf"));
-		cliente.setNascimento(request.getParameter("nascimento"));
-		cliente.setSituacao(request.getParameter("situacao"));
+		cliente.setEntrada(request.getParameter("entrada"));
+		cliente.setDias(Integer.parseInt(request.getParameter("dias")));
 		
 		ClienteDao.update(cliente);
 		

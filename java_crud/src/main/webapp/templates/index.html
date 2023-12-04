@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 
 <head>
   <meta charset="UTF-8">
@@ -12,10 +12,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="assets/scripts/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-  <header class="cabecalho">
+  <header class="cabecalho"><nav class="cabecalho__menu">
+    <div id="switch" onclick="toggleSwitch()">
+      <button><img src="" alt=""></button>
+      <span></span>
+    </div>
     <h1 class="texto">HOTELWEB</h1>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
@@ -27,13 +34,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="fonte nav-link" aria-current="page" href="../lista.jsp">Hóspedes</a>
+              <a class="fonte nav-link" aria-current="page" href="../hospedes.jsp">Hóspedes</a>
             </li>
             <li class="nav-item">
               <a class="fonte nav-link" href="#">Nossos ambientes</a>
             </li>
           </ul>
-
         </div>
       </div>
     </nav>
@@ -86,7 +92,7 @@
     </div>
 
     <div>
-      <a href="../cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
+      <a href="cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
     </div>
   </div>
 
@@ -138,7 +144,7 @@
       </select>
     </div>
     <div>
-      <a href="../cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
+      <a href="cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
     </div>
   </div>
 
@@ -203,7 +209,7 @@
     </div>
 
     <div>
-      <a href="../cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
+      <a href="cadastro.html" class="btn btn-primary botao_reservar">Reservar</a>
     </div>
   </div>
 
@@ -218,7 +224,7 @@
   </section>
   <footer class="footer">
     <div class="footer-icons">
-      <a href="https://www.instagram.com/kayowerter/" target="_blank">
+      <a href="https://www.instagram.com/jusesamoel/" target="_blank">
         <i class="fa-brands fa-instagram fa-2x"></i>
       </a>
       <a href="#">

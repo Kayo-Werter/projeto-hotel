@@ -31,7 +31,7 @@ public class ClienteCreateAndFind extends HttpServlet {
 		List<Cliente> clientes = ClienteDao.find(pesquisa);
 
 		request.setAttribute("clientes", clientes);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("lista.jsp");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("hospedes.jsp");
 		requestDispatcher.forward(request, response);
 	}
 
@@ -40,8 +40,8 @@ public class ClienteCreateAndFind extends HttpServlet {
 
 		cliente.setNome(request.getParameter("nome"));
 		cliente.setCpf(request.getParameter("cpf"));
-		cliente.setNascimento(request.getParameter("nascimento"));
-		cliente.setSituacao(request.getParameter("situacao"));
+		cliente.setEntrada(request.getParameter("entrada"));
+		cliente.setDias(Integer.parseInt(request.getParameter("dias")));
 
 		ClienteDao.create(cliente);
 
